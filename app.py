@@ -2,8 +2,8 @@ from flask import Flask, request, jsonify
 import pyodbc
 # init
 app = Flask(__name__)
-#conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:pyt21-sqlserver.database.windows.net,1433;Database=sqldb;Uid=sqlAdmin;Pwd=Asd123!4;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
-conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:pyt22-sqlserver.database.windows.net,1433;Database=sqldb;Uid=sqlAdmin;Pwd=Ahmadbarho1993;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
+conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:pyt21-sqlserver.database.windows.net,1433;Database=sqldb;Uid=sqlAdmin;Pwd=Asd123!4;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
+#conn = pyodbc.connect('Driver={ODBC Driver 17 for SQL Server};Server=tcp:pyt22-sqlserver.database.windows.net,1433;Database=sqldb;Uid=sqlAdmin;Pwd=Ahmadbarho1993;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;')
 
 cursor = conn.cursor()
 # routes
